@@ -1,0 +1,34 @@
+{
+ // text to speech engine language and speech rate
+ "language": "english-us",
+ "rate": 175,
+
+// path to the dataset directory
+"dataset_path": "/home/pi/Desktop/Attendance Management System/dataset",
+// school/university code for the class
+ "class": "test",
+
+ // timing of the class
+ "timing": "11:30",
+ "n_face_detection": 10,
+// number of images required per person in the dataset
+ "face_count": 10,
+
+ // maximum time limit (in seconds) to take the attendance once
+ // the class has started
+ "max_time_limit": 300,
+
+ // number of consecutive recognitions to be made to mark a person
+ // recognized
+ "consec_count": 3,
+ // path to the database
+ "db_path": "/home/pi/Desktop/Attendance Management System/database/employee.db",
+
+ // paths to the encodings, recognizer, and label encoder
+ "encodings_path": "/home/pi/Desktop/Attendance Management System/output/encodings.pickle",
+ "recognizer_path": "/home/pi/Desktop/Attendance Management System/output/recognizer.pickle",
+ "le_path": "/home/pi/Desktop/Attendance Management System/output/le.pickle",
+
+// dlib face detection to be used
+ "detection_method": "hog"
+ }
